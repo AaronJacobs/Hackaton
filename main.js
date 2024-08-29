@@ -3,6 +3,7 @@ const youtubeContent = $('#content');
 // defines section containing content on FB
 
 // defines section containing content on instagram
+const instagramContent = $('.x78zum5.xdt5ytf.x1iyjqo2.xg6iff7')
 
 // defines section containing content on X
 
@@ -34,6 +35,7 @@ const appendText = '<div id="focusText">Focus on your dream!</div>';
 const appendImage = '<img id="displayImage" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Software_Developer_at_work_03.jpg" alt="Focus on your dream!" />'
 
 // if URL is youtube, replace youtubeContent with newSection
+instagramContent.replaceWith('<div id="newSection"></div>');
 youtubeContent.replaceWith('<div id="newSection"></div>');
 // if URL is facebook, replace facebookContent with newSection
 $('#newSection').prepend(appendText);
