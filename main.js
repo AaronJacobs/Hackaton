@@ -1,4 +1,11 @@
-var content = $('#content');
+// defines section containing vides on youtube.com
+const youtubeContent = $('#content');
+// defines section containing content on FB
+
+// defines section containing content on instagram
+
+// defines section containing content on X
+
 const appendText = '<div id="focusText">Focus on your dream!</div>';
 // const cssSlider = `<div id="homepage-slider" class="st-slider">
 
@@ -26,7 +33,8 @@ const appendText = '<div id="focusText">Focus on your dream!</div>';
 
 const appendImage = '<img id="displayImage" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Software_Developer_at_work_03.jpg" alt="Focus on your dream!" />'
 
-
-content.replaceWith('<div id="newSection"></div>');
+// if URL is youtube, replace youtubeContent with newSection
+youtubeContent.replaceWith('<div id="newSection"></div>');
+// if URL is facebook, replace facebookContent with newSection
 $('#newSection').prepend(appendText);
 $('#focusText').after(appendImage);
