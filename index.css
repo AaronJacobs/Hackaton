@@ -1,4 +1,4 @@
-#newSection {
+/* #newSection {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9,6 +9,91 @@
 #displayImage {
   max-width: 60%;
   flex-shrink: 1;
+} */
+/* :root {
+  --snake-green: #4CAF50;
+  --snake-dark-green: #45a049;
+  --snake-yellow: #FFD700;
+  --snake-brown: #8B4513;
+} */
+#focusText {font-size:24px; color: #45a049; font-family: Helvetica, Arial, sans-serif; padding-top: 5px; padding-bottom: 10px}
+#newSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--snake-green);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
+#newSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* height: 10px; */
+  background: repeating-linear-gradient(
+    45deg,
+    var(--snake-dark-green),
+    var(--snake-dark-green) 10px,
+    var(--snake-green) 10px,
+    var(--snake-green) 20px
+  );
+}
+
+/* #focusText {
+  font-size: 1.5rem;
+  color: var(--snake-yellow);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+} */
+
+#displayImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--snake-brown);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* #displayImage:hover {
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+} */
+
+/* @media (min-width: 768px) {
+  #displayImage {
+    max-width: 60%;
+  }
+} */
+
+/* Snake-like navigation dots
+.snake-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+} */
+
+/* .snake-nav-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--snake-yellow);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+} */
+
+/* .snake-nav-dot:hover {
+  transform: scale(1.2);
+} */
 

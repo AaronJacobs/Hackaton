@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Code Smarter (and Harder)",
   "version": "1.0",
-  "description": "Removes all content from home page of Youtube, Facebook, Instagram and X",
+  "description": "Removes all content from home page of Facebook and Instagram, other platforms coming",
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*","https://www.facebook.com/*","https://www.instagram.com/*"],
@@ -11,10 +11,10 @@
     }
   ],
   "icons": {
-    "16": "pencil_icon16.png",
-    "32": "pencil_icon32.png",
-    "48": "pencil_icon48.png",
-    "128": "pencil_icon128.png"
+    "16": "slythplush_16.png",
+    "32": "slythplush_32.png",
+    "48": "slythplush_48.png",
+    "128": "slythplush_128.png"
   },
   "action": {
     "default_popup": "popup.html"
