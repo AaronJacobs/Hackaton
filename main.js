@@ -36,7 +36,8 @@ const appendText = '<div id="focusText">Focus on your dream!</div>';
 //         </div>
 //     </div>`
 
-const appendImage = '<img id="displayImage" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Software_Developer_at_work_03.jpg" alt="Focus on your dream!" />'
+const coderImage = '<img id="displayImage" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Software_Developer_at_work_03.jpg" alt="Focus on your dream!" />'
+const snakeImage = '<img id="displayImage" src="https://harrypottershop.com/cdn/shop/files/slythplush_d8cb218f-aafe-45de-ba43-45c5128c58e2_700x.png?v=1693485179" alt="Focus on your dream!" />'
 
 const asnakeLink = '<a href="https://www.googlesnake.org" id="googles-snake-game">Play Snake Game </a>'
 
@@ -57,7 +58,7 @@ window.addEventListener('load', () => {
   }
 
   $('#newSection').prepend(appendText);
-  $('#focusText').after(appendImage);
+  $('#focusText').after(snakeImage);
   // $('#displayImage').after(asnakeLink)
   $('#displayImage').after('<a id="snakeButton" href="https://www.googlesnake.org" target="_blank">Play Snake Game</a>')
 
